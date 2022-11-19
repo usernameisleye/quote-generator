@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    background-color: #C493B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: #FFF; 
+    padding: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 40%;
+}
+
+main header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content{
+    margin: 2rem 0;
+}
+
