@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #C493B0;
+    background-color: #B48484;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +16,9 @@ body{
 main{
     background-color: #FFF; 
     padding: 2rem;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 0 1rem 0 1rem;
     width: 40%;
+    height: fit-content;
 }
 
 main header{
@@ -31,3 +31,80 @@ main header{
     margin: 2rem 0;
 }
 
+.quote-box{
+    display: flex;
+    justify-content: center;
+}
+
+.quote{
+    text-align: center;
+    word-break: break-all;
+    font-size: 1.2rem;
+}
+
+.quote-box i:first-child{
+    margin: -.3rem 1rem 0 0;
+}
+
+.quote-box i:last-child{
+    margin: 0 0 .4rem 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.author{
+    text-align: end;
+    font-style: italic;
+    margin-top: .5rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.options ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.options ul li{
+    color: #B48484;
+    border: #B48484 1px solid;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .25s;
+
+}
+
+.options ul li:hover{
+    background-color: #B48484;
+    color: #FFF;
+}
+
+.buttons button{
+    padding: .8rem 1.6rem;
+    border-radius: 0 1rem 0 1rem;
+    border: none;
+    background-color: #B48484;
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.buttons button:hover{
+    filter: brightness(95%);
+}
+
+.buttons button.loading{
+    border-radius: 1rem 0 1rem 0;
+}
