@@ -12,14 +12,13 @@ readQuote.addEventListener('click', funcSpeech);
 copyQuote.addEventListener('click', () =>{
     navigator.clipboard.writeText(quote.innerHTML);
 
-    //copy button function
     copyQuote.innerHTML = '<i class="fa-solid fa-check"></i>'
     setTimeout(()=>{
         copyQuote.innerHTML = '<i class="fas fa-copy"></i>'
     }, 1000)
 });
 
-//tweet function
+
 tweetQuote.addEventListener('click', () =>{
     let tweetLink = `https://twitter.com/intent/tweet?url=${quote.innerHTML}`;
 
@@ -38,16 +37,11 @@ function generateQuote(){
         quoteBtn.innerHTML = 'New Quote';
         quoteBtn.classList.remove('loading');
     })
-
-    if(funcSpeech() = true){
-        return
-    }
 }
 
 function funcSpeech(){
     //using web sppech api(SpeechSynthesisUtterance) that represents a speech request
     let speech = new SpeechSynthesisUtterance(`${quote.innerHTML} by ${authorName.innerHTML}`)
 
-    //using speechSynthesis method(speak) to speak the 'speech' 
     speechSynthesis.speak(speech);
 }
